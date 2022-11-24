@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inicio</title>
+<style type="text/css">
+	a:link, a:visited {
+            text-decoration: none
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: rgb(255, 0, 170)
+        }
+
+        a:active {
+            text-decoration: none
+        }
+
+        ::placeholder {
+            padding-left: 6%;
+            color: rgb(127, 125, 125);
+}
+.search-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(+5%);
+    background-color: #FF89C9;
+    height: 20px;
+    padding: 8px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .4s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: black;
+}
+
+::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #FF89C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 10vh;
+    background-color: #268fbe;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+a.logo { 
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a.logo:hover {
+    opacity: 0.7;
+
+}
+
+a.lista1 { 
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a.lista1:hover {
+    opacity: 0.7;
+
+}
+body {
+            background-image: url(imagens/DogI.jpg);
+        }
+        * {
+            margin: 0;
+    padding: 0;
+}
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+        <nav>
+            <a class="logo" href="index.html">My dear friend</a>
+            <ul class="nav-list">
+                <li><a class="lista1" href="index.html">Início</a></li>
+                <li><a class="lista1" href="login.html">Login</a></li>
+                <li><a class="lista1" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <img id="fundo" src="">
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html>

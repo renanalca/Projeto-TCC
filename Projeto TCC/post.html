@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Post</title>
+    <link rel="stylesheet" href="css/style.css" />
+<style type="text/css">
+body {
+            background-color: #ffffff;
+        }
+        * {
+            margin: 0;
+    padding: 0;
+}
+#box {
+            padding-top: 1%;
+            height: 73%;
+            width: 40%;
+            border-width: 2px;
+            border-style: solid;
+            background-color: rgb(253, 242, 254);
+            }
+             h1 {
+            font-family: Arial;
+            font-size: 280%;
+            color: black;
+        }
+        span {
+            font-family: Arial;
+            font-size: 175%;
+        }
+        input.user {
+            width:26%;
+            height: 32px;
+            border-radius: 4px;
+            border: solid 1px;
+            margin-right: 10px;
+
+        }
+        input.senha {
+            width:33.5%;
+            height: 32px;
+            border-radius: 4px;
+            border: solid 1px;
+            margin-right: 10px;
+
+        }
+        img.avatar {
+            border: solid black 2px;
+            border-radius: 100%;
+        }
+
+        input.button {
+            background-color: #FF89C9;
+            border-radius: 13px;
+            border-color: transparent;
+            color: white;
+            padding: 12px 28px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size: x-large;
+        }
+
+        div.fundo1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 5.3%;
+        }
+        div.fundo2 {
+            background-color:#F99CFF;
+            padding: 10px;
+
+        }
+        div.fundoinfo {
+            background-color: beige;
+            padding: 10px;
+        }
+        div.fundopet {
+            padding-left: 40px;
+            padding-right: 30px;
+            background-color: #F99CFF;
+            
+        }
+        input.inputnomepet {
+
+            font-size: 15px;
+            height: 30px;
+            border-radius: 4px;
+            border: solid 1px;
+            border-color: #000;
+        }
+.footer{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    width: 100%
+    height: 150px;
+    background-color: #262324;
+    padding: 30px
+
+}
+
+h2, h3, span, p {
+
+    font-family: sans-serif;
+
+}
+
+div.vacinaspet {
+    padding-top: 50%;
+}
+div.fotopet {
+    padding-top: 30%;
+}
+div.botaopet {
+    padding-top: 50%;
+}
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+         <nav class="navdesktop">
+      <a class="logo" href="index.html">My dear friend</a>
+      <ul class="nav-list">
+        
+        <div class="Post">
+          <a href="post.html" class="post-btn">
+            <img
+              src="imagens/add.png"
+              alt="Add-Post"
+              height="35"
+              width="35"
+              class="addpost"
+            />
+          </a>
+        </div>
+        
+        <a href="interesses.html" class="interesses">
+          <img src="imagens/adotar2.png" height="35" width="35" class="" />
+        </a>
+       
+        <div class="profile">
+          <a href="perfil.html" class="profile-btn">
+            <img
+              src="imagens/avatar2.png"
+              alt="Perfil"
+              height="30"
+              width="30"
+              class="avatar"
+            />
+          </a>
+        </div>
+
+       
+      </ul>
+    </nav>
+    
+
+<nav class="navcell">
+
+
+      <a class="logo" href="index.html">My dear friend</a>    
+
+
+      <div class="dropdown">
+
+        <button class="mainmenubtn">
+          <img src="imagens/list.svg" width="100%"> 
+        </button>
+
+        <div class="dropdown-child">
+          
+          <a href="perfil.html"> Perfil</a>
+          <a href="post.html"> Post</a>
+          <a href="interesses.html"> Interesses</a>
+        </div>
+
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </header>
+
+<form>
+
+    <div class="fundo1">
+
+        <div class="fundoinfo">
+            <br><br><br>
+            <center><h2>ESPÉCIE</h2><br></center>
+
+            <input type="checkbox" id="cachorrobox"><span> Cachorro</span> <br>
+            <input type="checkbox" id="gatobox"><span> Gato</span><br><br><br><br>
+
+            <center><h2>IDADE</h2><br></center>
+            <input type="checkbox" id="Filhotebox"><span> Filhote</span><br>
+            <input type="checkbox" id="adultobox"><span> Adulto</span><br>
+            <input type="checkbox" id="idosobox"><span> Idoso</span><br><br><br><br>
+
+            <center><h2>ESTADO</h2><br></center>
+            <select id="estado" name="estado">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+
+            
+        </div>
+        
+
+        <div class="fundopet">
+<br><br><br><br>
+            <div class="nomepet">
+                <span>Nome do pet:</span>
+                <input type="text" class="inputnomepet">
+            </div>
+<br><br>
+            <div class="descricaopet">
+                <h2>Descrição</h2>
+                <textarea rows="10" cols="50"></textarea>
+                
+            </div>
+        </div>
+        <div class="fundo2">
+            <center>
+                <div class="vacinaspet">
+                    <h3>Vacinas</h4>
+                    <br>
+                    <input type="file" accept="image/*" class="picture_input"
+                    alt="Foto das vacinas">
+                </div>
+
+                <div class="fotopet">
+                    <h3>Foto do pet</h3><br>
+                    <input type="file" accept="image/*" class="picture_input"
+                    alt="Foto do pet">
+                </div>
+
+                <div class="botaopet">
+                    <input type="button" class="button" onmouseover="this.style.backgroundColor='#c23297';return true;"
+                        onmouseout="this.style.backgroundColor='#FF89C9';return true;" value="Enviar">
+                </div>
+            </center>
+            </div>    
+    </div>
+</form>
+    <footer class="footer">
+    © Desing by: Renan, Yasmin, Livia, Luis e Pedro.
+</footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</html> 

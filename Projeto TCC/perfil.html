@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8"/>
+        <title>Perfil do Usuário</title>
+    </head>
+
+    <body>
+        <style type="text/css">
+
+            * {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffffff;
+}
+
+.search-box {
+    top: 50%;
+    left: 50%;
+    transform: translate(+5%);
+    background-color: #FF89C9;
+    height: 20px;
+    padding: 8px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .4s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: black;
+}
+
+::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%
+    background: #FF89C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+}
+
+a { 
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 10vh;
+    background-color: #268fbe;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+#minhaconta {
+    height: 450px;
+    width: 500px;
+    background-color: rgb(253, 242, 254);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+    button {
+        background-color: #FF89C9;
+        border-radius: 13px;
+        border-color: transparent;
+        color: white;
+        padding: 8px 18px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+        span,p {
+            font-family: Arial;
+            font-size: 150%;
+        }
+
+        h1 {
+            font-family: Arial;
+            
+        }
+        h2 {
+            font-family: Arial;
+            
+        }
+        img.avatar {
+            border: solid 2px;
+            border-radius: 100%;
+            border-color: black;
+        }
+        h1.perfil {
+            font-family: Arial;
+            font-size: 280%;
+            color: #FF89C9;
+            text-decoration: underline;
+        }
+        input.button {
+            background-color: #FF89C9;
+            border-radius: 13px;
+            border-color: transparent;
+            color: white;
+            padding: 12px 28px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            font-size: x-large;
+        }
+        div.fundo1 {
+            margin-top: 2%;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            display: flex;
+        }
+
+        div.perfil {
+            background-color: #fef3ff;
+            height: 85%;
+            width: 50%;
+            border-width: 2px;
+            border-style: solid;
+            border-radius: 10px;
+            margin-bottom: 2%;
+        }
+
+        img.avatarp {
+            border: solid 2px;
+            border-radius: 100%;
+            border-color: black;
+            width: 30%;
+        }
+
+        .footer{
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    height: 25px;
+    background-color: #262324;
+    padding: 30px 0px 30px 0px;
+
+}
+        </style>
+        <header>
+        <nav>
+            <a class="logo" href="timeline.html">My dear friend</a>
+            <ul class="nav-list">
+                <li></li>
+                 <div class="Post">
+                <a href="post.html" class="post-btn">
+                    <img src="imagens/add.png" alt="Add-Post" height="35" width="35" class="addpost">
+                </a>
+            </div><li></li>
+                <a href="interesses.html">
+                    <img src="imagens/adotar2.png" height="35" width="35" class="">
+                </a><li></li>
+                <div class="profile">
+                <a href="perfil.html" class="profile-btn">
+                        <img src="imagens/avatar2.png" alt="Perfil" height="30" width="30" class="avatar">
+                </a>
+            </div>
+           
+            <li></li><li></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+
+        <br>
+        <div class="fundo1">
+            <div class="perfil">
+                <center>
+                    <br>
+                <h1 class="perfil">Perfil</h1><br>
+                <p>A procura de</p><br>
+                <img class= "avatarp" src="imagens/avatar.jpg" >
+                <br><br>
+                <h2>Sobre mim</h2> 
+                <p>Descrição</p>
+                <br>
+                <h2> Detalhes</h2>
+                <span>Nome:  Juliano Souza</span><br>
+                <span>Data de Nascimento: 20 - Out - 2000</span><br><br>
+                <h2> Localização</h2>
+                <span>Estado: São Paulo</span><br>
+                <span>Cidade: Barueri  </span><br>
+                <span>CEP: 00000-000</span><br><br>
+                <a href="interesses.html"><input type="button" class="button" onmouseover="this.style.backgroundColor='#c23297';return true;"
+                onmouseout="this.style.backgroundColor='#FF89C9';return true;" value="Ver meus interesses"></a>
+                <a href="minhaconta.html"><input type="button" class="button" onmouseover="this.style.backgroundColor='#c23297';return true;"
+                onmouseout="this.style.backgroundColor='#FF89C9';return true;" value="Editar perfil"></a><br><br>
+                
+                </center>   
+            </div>
+        </div>
+
+        <footer class="footer">
+            © Desing by: Renan, Yasmin, Livia, Luis e Pedro.
+          </footer>
